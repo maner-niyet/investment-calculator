@@ -5,7 +5,7 @@ export default function Results({ input }) {
   const results = [];
   calculateInvestmentResults(input, results);
   if (results.length === 0) {
-    return <p>Please provide duration greater than zero</p>
+    return <p className='center'>Please provide duration greater than zero</p>
   }
   const initialInvestment =
     results[0].valueEndOfYear -
